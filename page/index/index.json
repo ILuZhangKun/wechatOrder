@@ -1,0 +1,6 @@
+{
+  "windows":{
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance":50
+  }
+}

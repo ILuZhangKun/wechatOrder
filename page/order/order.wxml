@@ -1,0 +1,80 @@
+<!--pages/order/order.wxml-->
+<view>
+  <view id="nearby" class="section section-big nearby">
+    <view class='go-center'>
+      <view class='tab-box'>
+        <view bindtap='changeTab' data-index="0" class="go-center {{tabIndex==0?'active-color':'unactive-color'}}" style='width:33%'>待付款</view>
+        <view bindtap='changeTab' data-index="1" class="go-center {{tabIndex==1?'active-color':'unactive-color'}}" style='width:33%'>待取餐</view>
+        <view bindtap='changeTab' data-index="2" class="go-center {{tabIndex==2?'active-color':'unactive-color'}}" style='width:33%'>已完成</view>
+      </view>
+    </view>
+
+    <view class="shop" wx:for="{{order}}" wx:key="{{o_id}}" wx:if="{{tabIndex==0}}">
+      <navigator url='../order/ordernumber?o_id={{item.o_id}}'>
+        <view class='bigview'>
+          <view class='myorder'>
+            <image src="{{item.pic_url}}" class='myImg' />
+            <view class='ordername'>{{item.s_storename}}</view>
+            <view class='ordernum'>数量{{item.goods_count}}</view>
+            <view class='orderprice'>总价¥{{item.total_money}}</view>
+          </view>
+          <view class="card-box">
+            <view class="card-fetch">
+              <view class="card-left-bar">
+                <label>付</label>
+                <label>款</label>
+                <label>号</label>
+              </view>
+            </view>
+            <view>
+              <view class='go-top-10'>
+                <label class='number-card'>{{item.wait_num}}</label>
+              </view>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="shop" wx:for="{{order}}" wx:key="{{o_id}}" wx:if="{{tabIndex==1}}">
+      <navigator url='../order/ordernumber?o_id={{item.o_id}}'>
+        <view class='bigview'>
+          <view class='myorder'>
+            <image src="{{item.pic_url}}" class='myImg' />
+            <view class='ordername'>{{item.s_storename}}</view>
+            <view class='ordernum'>数量{{item.goods_count}}</view>
+            <view class='orderprice'>总价¥{{item.total_money}}</view>
+          </view>
+          <view class="card-box">
+            <view class="card-fetch">
+              <view class="card-left-bar">
+                <label>取</label>
+                <label>餐</label>
+                <label>号</label>
+              </view>
+            </view>
+            <view>
+              <view class='go-top-10'>
+                <label class='number-card'>{{item.wait_num}}</label>
+              </view>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="shop" wx:for="{{order}}" wx:key="{{o_id}}" wx:if="{{tabIndex==2}}">
+      <navigator url='../order/orderdone?o_id={{item.o_id}}'>
+        <view class='bigview'>
+          <view class='myorder'>
+            <image src="{{item.pic_url}}" class='myImg' />
+            <view class='ordername'>{{item.s_storename}}</view>
+            <view class='ordernum'>数量{{item.goods_count}}</view>
+            <view class='orderprice'>总价¥{{item.total_money}}</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+  </view>
+</view>

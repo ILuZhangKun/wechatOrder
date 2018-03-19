@@ -1,0 +1,126 @@
+/* pages/order/list/list.wxss */
+.active-color{
+  background: #192A3A;
+  border: 1px solid #192A3A;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: white;
+}
+.unactive-color{
+  background: #ffffff;
+  border: 1px solid #192A3A;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: black;
+}
+.go-center{
+  margin:7px auto;
+   display:flex;
+  justify-content:center;
+}
+.bigview{
+  display:flex;
+  margin-top:13px; 
+}
+.tab-box{
+  width:70%;
+  display:flex;
+  font-size:14px;
+  color:white;
+}
+.myorder{
+  height: 150rpx;
+  width: 57%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ordername{
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+}
+.ordernum{
+  margin-top:5px;
+  font-size: 12px;
+  color: #666;
+}
+.orderprice{
+  margin-top:5px;
+  font-size: 14px;
+  color: #FF9C35;
+}
+.nearby {
+  height: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+.nearby .shop {
+	padding: 10rpx 0;
+	border-top: 1rpx solid #efefef;
+}
+.nearby .shop image {
+	/* width: 100%; */
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 150rpx;
+	height: 150rpx;
+   float:left; 
+}
+.section-big {
+	padding: 20rpx;
+}
+.section-big .title {
+	position: relative;
+	text-align: center;
+	font-size: 32rpx;
+	font-weight: bold;
+	line-height: 2;
+	margin-bottom: 20rpx;
+}
+.section-big .title:before {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -180rpx;
+	width: 100rpx;
+	height: 1rpx;
+	background: #000;
+}
+.section-big .title:after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: 80rpx;
+	width: 100rpx;
+	height: 1rpx;
+	background: #000;
+}
+/* 取款码 */
+.card-fetch{
+  width:27px;
+  background:#DE5F4B;
+  height:65px;
+  font-size:12px;
+  color:white;
+}
+.card-box{
+  display:flex;
+  width:35%;
+  height:65px;
+  background:#FEF9F4;
+  float: right;
+  margin-top: 5px;
+}
+.card-left-bar{
+  width:14px;
+  padding:7px 10px;
+}
+.number-card{
+  font-size:30px;
+  padding:0px 10px
+}
+.go-top-10{
+  margin-top:10px
+}

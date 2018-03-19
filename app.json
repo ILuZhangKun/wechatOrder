@@ -1,0 +1,56 @@
+{
+	"pages": [
+    "page/superindex/index",
+    "page/superindex/search",
+		"page/index/index",
+		"page/index/search",
+		"page/shop/shop",
+		"page/mine/mine",
+    "page/order/number",
+    "page/order/orderdetail",
+    "page/order/ordernumber",
+    "page/order/orderdone",
+    "page/order/order"
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#192A3A",
+		"navigationBarTextStyle": "white",
+		"backgroundColor": "#efefef",
+		"backgroundTextStyle": "dark",
+		"navigationBarTitleText": "BookPad",
+    "enablePullDownRefresh": true
+	},
+	"tabBar": {
+		"color": "#878787",
+		"selectedColor": "#192A3A",
+		"borderStyle": "black",
+		"backgroundColor": "#fcfcfc",
+		"list": [
+			{
+				"pagePath": "page/superindex/index",
+				"iconPath": "imgs/tabBar/home_2.png",
+				"selectedIconPath": "imgs/tabBar/home_3.png",
+				"text": "首页"
+			},
+      {
+				"pagePath": "page/order/order",
+				"iconPath": "imgs/tabBar/order_2.png",
+				"selectedIconPath": "imgs/tabBar/order_3.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "page/mine/mine",
+				"iconPath": "imgs/tabBar/mine_2.png",
+				"selectedIconPath": "imgs/tabBar/mine_3.png",
+				"text": "我的"
+			}
+		]
+	},
+	"networkTimeout": {
+		"request": 10000,
+		"connectSocket": 10000,
+		"uploadFile": 10000,
+		"downloadFile": 10000
+	},
+	"debug": true
+}
