@@ -1,2 +1,2 @@
-# a takeaway demo of wxapp
-微信小程序的外卖demo
+# wechatOrderBuyer 买家版
+微信小程序用户端。商圈->档口->菜品。轮询等候商家确认付款。
